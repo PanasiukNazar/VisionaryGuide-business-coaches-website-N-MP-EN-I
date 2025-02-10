@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- ===============================================-->
+        <!--    Document Title-->
+        <!-- ===============================================-->
+        <title>VisionaryGuide</title>
+
+        <!-- ===============================================-->
+        <!--    Favicons-->
+        <!-- ===============================================-->
+
+        <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            href="assets/img/favicons/favicon.ico"
+        />
+        <meta
+            name="msapplication-TileImage"
+            content="assets/img/favicons/mstile-150x150.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- ===============================================-->
+        <!--    Stylesheets-->
+        <!-- ===============================================-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&amp;display=swap"
+            rel="stylesheet"
+        />
+        <link href="vendors/prism/prism.css" rel="stylesheet" />
+        <link href="vendors/swiper/swiper-bundle.min.css" rel="stylesheet" />
+        <link href="assets/css/theme.css" rel="stylesheet" />
+        <link href="assets/css/user.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <!-- ===============================================-->
+        <!--    Main Content-->
+        <!-- ===============================================-->
+        <main class="main" id="top">
+            <div class="cursor-outer d-none d-md-block"></div>
+            <nav class="navbar navbar-light py-3 px-0 overflow-hidden mb-5">
+                <div class="container px-md-5">
+                    <div class="row w-100 g-0 justify-content-between">
+                        <div class="col-8">
+                            <div class="d-inline-block">
+                                <a
+                                    class="navbar-brand pt-0 fs-3 text-black d-flex align-items-center"
+                                    href="index.html"
+                                >
+                                    <img
+                                        class="img-fluid"
+                                        src="assets/img/icons/logo-icon.png"
+                                        alt=""
+                                    />
+                                    <span class="fw-bolder ms-2">Visionary</span
+                                    ><span class="fw-thin">Guide</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-4 d-lg-none text-end pe-0">
+                            <button
+                                class="btn p-0 shadow-none text-black fs-2 d-inline-block"
+                                data-bs-toggle="offcanvas"
+                                data-bs-target="#navbarOffcanvas"
+                                aria-controls="navbarOffcanvas"
+                                aria-expanded="false"
+                                aria-label="Toggle offcanvas navigation"
+                            >
+                                <span class="menu-bar"></span>
+                            </button>
+                        </div>
+                        <div
+                            class="offcanvas offcanvas-end px-0"
+                            id="navbarOffcanvas"
+                            aria-labelledby="navbarOffcanvasTitle"
+                            aria-hidden="true"
+                        >
+                            <div class="offcanvas-header justify-content-end">
+                                <h5
+                                    class="visually-hidden offcanvas-title"
+                                    id="navbarOffcanvasTitle"
+                                >
+                                    Menu
+                                </h5>
+                                <button
+                                    class="btn p-0 shadow-none text-black fs-2 d-inline text-end"
+                                    type="button"
+                                    data-bs-dismiss="offcanvas"
+                                    aria-label="Close"
+                                >
+                                    <span class="menu-close-bar"></span>
+                                </button>
+                            </div>
+                            <div class="offcanvas-body px-0">
+                                <div
+                                    class="d-lg-flex flex-center-start gap-3 overflow-hidden"
+                                >
+                                    <ul class="navbar-nav ms-auto fs-4 ps-6">
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5 active"
+                                                aria-current="page"
+                                                href="index.html"
+                                                >Home</a
+                                            >
+                                        </li>
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5"
+                                                aria-current="page"
+                                                href="services.html"
+                                                >Services</a
+                                            >
+                                        </li>
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5"
+                                                aria-current="page"
+                                                href="about.html"
+                                                >About Us</a
+                                            >
+                                        </li>
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5"
+                                                aria-current="page"
+                                                href="gallery.html"
+                                                >Gallery</a
+                                            >
+                                        </li>
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5"
+                                                aria-current="page"
+                                                href="contact.html"
+                                                >Contact</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div
+                                class="d-none d-lg-flex justify-content-end position-relative z-index-1"
+                            >
+                                <div
+                                    class="position-absolute absolute-centered z-index--1"
+                                >
+                                    <h1
+                                        class="ms-2 fw-bolder text-outlined text-uppercase text-white pe-none display-1"
+                                    >
+                                        Home
+                                    </h1>
+                                </div>
+                                <div class="d-flex gap-3 align-items-start">
+                                    <a
+                                        class="mb-0 ms-auto text-warning fs-0 fw-bold text-uppercase"
+                                        href="contact.html"
+                                    >
+                                        Contact Us Now</a
+                                    >
+                                    <ul
+                                        class="navbar-nav navbar-fotogency ms-auto text-end"
+                                    >
+                                        <li
+                                            class="nav-item px-2 position-relative"
+                                        >
+                                            <a
+                                                class="nav-link pt-0 active"
+                                                aria-current="page"
+                                                href="index.html"
+                                                >Home</a
+                                            >
+                                        </li>
+                                        <li
+                                            class="nav-item px-2 position-relative"
+                                        >
+                                            <a
+                                                class="nav-link pt-0"
+                                                aria-current="page"
+                                                href="services.html"
+                                                >Services</a
+                                            >
+                                        </li>
+                                        <li
+                                            class="nav-item px-2 position-relative"
+                                        >
+                                            <a
+                                                class="nav-link pt-0"
+                                                aria-current="page"
+                                                href="gallery.html"
+                                                >Gallery</a
+                                            >
+                                        </li>
+                                        <li
+                                            class="nav-item px-2 position-relative"
+                                        >
+                                            <a
+                                                class="nav-link pt-0"
+                                                aria-current="page"
+                                                href="about.html"
+                                                >About Us</a
+                                            >
+                                        </li>
+                                        <li
+                                            class="nav-item px-2 position-relative"
+                                        >
+                                            <a
+                                                class="nav-link pt-0"
+                                                aria-current="page"
+                                                href="contact.html"
+                                                >Contact</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <section class="py-4 pt-md-0 pb-8 pb-sm-11 mt-lg-n8">
+                <div class="container px-md-5">
+                    <div class="row">
+                        <div class="col-md-9 col-lg-7">
+                            <h1
+                                class="fs-4 fs-md-6 fs-xl-7 mb-5 mb-lg-0 position-relative z-index-2"
+                            >
+                                Unlock Your Business Potential
+                                <span class="fw-thin text-300"
+                                    >with Expert Coaching.</span
+                                >
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="row mt-md-n6">
+                        <div class="col-2 d-none d-lg-block mt-auto">
+                            <img
+                                class="img-fluid"
+                                src="assets/img/home/img2.png"
+                                alt=""
+                            />
+                        </div>
+                        <div class="col-1 mt-auto d-none d-lg-block">
+                            <a
+                                class="scroll-indicator text-warning"
+                                style="transform: rotate(0) !important"
+                                href="contact.html"
+                            >
+                                <span
+                                    style="
+                                        color: #fff;
+                                        background-color: #97bc62ff;
+                                        padding: 10px;
+                                    "
+                                    >Contact</span
+                                >
+                            </a>
+                        </div>
+                        <div class="col-lg-7 position-relative">
+                            <div
+                                class="position-relative overflow-hidden overflow-md-visible"
+                            >
+                                <img
+                                    class="img-fluid"
+                                    src="assets/img/home/img1.png"
+                                    alt=""
+                                />
+                                <div
+                                    class="img-circle p-5 p-md-7 rounded-circle"
+                                ></div>
+                                <div
+                                    class="img-circle-2 p-5 p-md-7 rounded-circle"
+                                ></div>
+                            </div>
+                            <div
+                                class="position-absolute bottom-n100 col-11 mt-6 d-none d-md-block"
+                            >
+                                <p class="fs-2 lh-1 text-400">
+                                    Achieve Success with Professional Business
+                                    Coaching.
+                                </p>
+                                <p class="text-300">
+                                    Develop leadership skills, optimize
+                                    strategies, and elevate your business with
+                                    expert guidance tailored to your goals.
+                                </p>
+                            </div>
+                            <div
+                                class="position-absolute start-0 bottom-0 d-lg-none"
+                            >
+                                <a
+                                    class="scroll-indicator text-warning"
+                                    style="transform: rotate(0) !important"
+                                    href="contact.html"
+                                >
+                                    <span
+                                        style="
+                                            color: #fff;
+                                            background-color: #97bc62ff;
+                                            padding: 10px;
+                                        "
+                                        >Contact us</span
+                                    >
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-2 d-none d-lg-block mb-auto">
+                            <img
+                                class="img-fluid"
+                                src="assets/img/home/img3.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-3">
+                <div class="container-fluid px-0">
+                    <div
+                        class="position-absolute w-100 border-dashed-bottom opacity-25 top-5 z-index-1"
+                    ></div>
+                    <div class="container px-md-5">
+                        <div class="row g-0">
+                            <div class="col-lg-12 pb-6 px-0 mb-lg-0">
+                                <div
+                                    class="swiper-container swiper-theme"
+                                    data-swiper='{"slidesPerView":1,"breakpoints":{"576":{"slidesPerView":1.2}},"spaceBetween":30,"grabCursor":true,"pagination":{"el":".swiper-pagination","clickable":true},"loop":true,"loopedSlides":3,"slideToClickedSlide":true}'
+                                >
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="row align-items-center">
+                                                <div class="col-xl-7">
+                                                    <div
+                                                        class="position-relative"
+                                                    >
+                                                        <div
+                                                            class="position-absolute start-0 bottom-0 ms-3"
+                                                        >
+                                                            <h3
+                                                                class="text-white"
+                                                            >
+                                                                Master
+                                                                Leadership &
+                                                                Growth
+                                                            </h3>
+                                                            <p class="text-300">
+                                                                Transform your
+                                                                mindset and
+                                                                strategies
+                                                            </p>
+                                                        </div>
+                                                        <img
+                                                            class="portfolio-img img-fluid"
+                                                            src="assets/img/portfolio/img01.jpg"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4 mt-4">
+                                                    <p class="fs-0">
+                                                        Gain the confidence and
+                                                        skills needed to lead
+                                                        your business to new
+                                                        heights. Our coaching
+                                                        programs provide
+                                                        actionable insights to
+                                                        help you succeed.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="row align-items-center">
+                                                <div class="col-xl-7">
+                                                    <div
+                                                        class="position-relative"
+                                                    >
+                                                        <div
+                                                            class="position-absolute start-0 bottom-0 ms-3"
+                                                        >
+                                                            <h3
+                                                                class="text-white"
+                                                            >
+                                                                Effective
+                                                                Business
+                                                                Strategies
+                                                            </h3>
+                                                            <p class="text-300">
+                                                                Plan smarter,
+                                                                grow faster
+                                                            </p>
+                                                        </div>
+                                                        <img
+                                                            class="portfolio-img img-fluid"
+                                                            src="assets/img/portfolio/img02.jpg"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4 mt-4">
+                                                    <p class="fs-0">
+                                                        Discover proven methods
+                                                        to streamline
+                                                        operations, increase
+                                                        efficiency, and drive
+                                                        sustainable business
+                                                        success.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="row align-items-center">
+                                                <div class="col-xl-7">
+                                                    <div
+                                                        class="position-relative"
+                                                    >
+                                                        <div
+                                                            class="position-absolute start-0 bottom-0 ms-3"
+                                                        >
+                                                            <h3
+                                                                class="text-white"
+                                                            >
+                                                                Maximize Your
+                                                                Potential
+                                                            </h3>
+                                                            <p class="text-300">
+                                                                Turn ambition
+                                                                into achievement
+                                                            </p>
+                                                        </div>
+                                                        <img
+                                                            class="portfolio-img img-fluid"
+                                                            src="assets/img/portfolio/img03.jpg"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4 mt-4">
+                                                    <p class="fs-0">
+                                                        Our coaching sessions
+                                                        provide practical tools
+                                                        and expert insights to
+                                                        help you unlock new
+                                                        opportunities and reach
+                                                        your full potential.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="swiper-theme swiper-pagination d-flex mt-4"
+                                ></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============================================-->
+            <!-- <section> begin ============================-->
+            <section class="py-2">
+                <div class="container px-md-5">
+                    <div class="row g-4">
+                        <div class="col-lg-6 col-md-6 d-flex">
+                            <div class="card border-0 mb-3">
+                                <img
+                                    class="card-img-top"
+                                    src="assets/img/blogs/img1.png"
+                                    alt=""
+                                />
+                                <div
+                                    class="d-flex align-items-center justify-content-between"
+                                >
+                                    <div class="d-flex align-items-center">
+                                        <span
+                                            class="fa-solid fa-circle-dot text-warning"
+                                        ></span>
+                                        <p class="text-300 m-0 ps-1">
+                                            18min read
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="bg-warning p-2 text-center opacity-50"
+                                    >
+                                        <p class="text-white mb-0">
+                                            The Future of Business Coaching
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <h5 class="mb-3">
+                                        How Business Coaching Transforms Success
+                                    </h5>
+                                    <p class="text-200 m-0 mb-3">
+                                        By -
+                                        <span class="text-300 fw-bold"
+                                            >Jonathan Smith</span
+                                        >
+                                    </p>
+                                    <p class="mb-3">
+                                        Business coaching is a key factor in
+                                        professional growth. Learn how expert
+                                        coaching helps individuals refine their
+                                        leadership, optimize business
+                                        strategies, and drive success in
+                                        competitive industries.
+                                    </p>
+                                    <button
+                                        class="btn btn-link text-warning p-0"
+                                    >
+                                        <a
+                                            href="shop.html"
+                                            style="color: #97bc62ff"
+                                        >
+                                            <span class="fw-medium"
+                                                >Read Full Article</span
+                                            >
+                                            <img
+                                                class="ms-3"
+                                                src="assets/img/icons/long-arrow.png"
+                                                alt=""
+                                            />
+                                        </a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 d-flex">
+                            <div class="card border-0 mb-3">
+                                <img
+                                    class="card-img-top"
+                                    src="assets/img/blogs/img2.png"
+                                    alt=""
+                                />
+                                <div
+                                    class="d-flex align-items-center justify-content-between"
+                                >
+                                    <div class="d-flex align-items-center">
+                                        <span
+                                            class="fa-solid fa-circle-dot text-warning"
+                                        ></span>
+                                        <p class="text-300 m-0 ps-1">
+                                            10min read
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="bg-warning p-2 text-center opacity-50"
+                                    >
+                                        <p class="text-white mb-0">
+                                            Business Coaching in Practice
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <h5 class="mb-3">
+                                        Essential Skills for Business Coaches
+                                    </h5>
+                                    <p class="text-200 m-0 mb-3">
+                                        By -
+                                        <span class="text-300 fw-bold"
+                                            >Michael Roberts</span
+                                        >
+                                    </p>
+                                    <p class="mb-3">
+                                        Discover the essential skills every
+                                        business coach needs to help clients
+                                        achieve their professional goals. Learn
+                                        about leadership development, strategic
+                                        planning, and effective communication
+                                        techniques.
+                                    </p>
+                                    <button
+                                        class="btn btn-link text-warning p-0"
+                                    >
+                                        <a
+                                            href="shop.html"
+                                            style="color: #97bc62ff"
+                                        >
+                                            <span class="fw-medium"
+                                                >Read Full Article</span
+                                            >
+                                            <img
+                                                class="ms-3"
+                                                src="assets/img/icons/long-arrow.png"
+                                                alt=""
+                                            />
+                                        </a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div
+                            class="d-flex align-items-center justify-content-center mt-3"
+                        >
+                            <button
+                                class="btn btn-link d-inline-block text-warning p-0 fs-1"
+                            >
+                                <span class="fw-bold">View All</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of .container-->
+            </section>
+            <!-- <section> close ============================-->
+            <!-- ============================================-->
+
+            <!-- ============================================-->
+            <!-- <section> begin ============================-->
+            <section class="py-4" id="contact">
+                <div class="container px-md-5">
+                    <div class="row align-items-center">
+                        <div class="my-4 text-center">
+                            <h1
+                                class="text-uppercase fs-lg-8 fs-6 fw-bolder text-300 lh-1 position-relative z-index-0"
+                            >
+                                Contact
+                            </h1>
+                            <h1
+                                class="fw-bolder text-outlined fs-7 text-white lh-1 mt-n4 position-relative z-index--1"
+                            >
+                                Get in Touch
+                            </h1>
+                            <form
+                                action="thanks.html"
+                                method="get"
+                                class="my-5 px-3"
+                            >
+                                <div class="row g-3 g-md-5">
+                                    <div class="col-md-6">
+                                        <div class="card border-0">
+                                            <div class="form-floating mb-3">
+                                                <input
+                                                    class="form-control form-fotogency-header-control"
+                                                    id="floatingEmail"
+                                                    type="email"
+                                                    placeholder="name@example.com"
+                                                    required
+                                                />
+                                                <label for="floatingEmail"
+                                                    >Email</label
+                                                >
+                                            </div>
+                                            <div class="form-floating mb-3">
+                                                <input
+                                                    class="form-control form-fotogency-header-control"
+                                                    id="floatingName"
+                                                    type="text"
+                                                    placeholder="Name"
+                                                    required
+                                                />
+                                                <label for="floatingName"
+                                                    >Your Name</label
+                                                >
+                                            </div>
+                                            <div class="form-floating mb-3">
+                                                <input
+                                                    class="form-control form-fotogency-header-control text-400"
+                                                    id="floatingDate"
+                                                    type="text"
+                                                    placeholder="Preferred Date"
+                                                    required
+                                                />
+                                                <label for="floatingDate"
+                                                    >Preferred Date</label
+                                                >
+                                            </div>
+                                            <div class="form-floating mb-3">
+                                                <input
+                                                    class="form-control form-fotogency-header-control"
+                                                    id="floatingSource"
+                                                    type="text"
+                                                    placeholder="How did you hear about us?"
+                                                    required
+                                                />
+                                                <label for="floatingSource"
+                                                    >How did you hear about
+                                                    us?</label
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card border-0">
+                                            <input
+                                                class="form-control opacity-0 pb-0 pe-none d-none d-md-block"
+                                            />
+                                            <div class="form-floating mb-3">
+                                                <textarea
+                                                    class="form-control form-fotogency-header-control border ps-2 form-fotogency-header-control"
+                                                    id="floatingTextarea"
+                                                    style="height: 210px"
+                                                    placeholder="Leave a message here"
+                                                    required
+                                                ></textarea>
+                                                <label
+                                                    class="ps-2"
+                                                    for="floatingTextarea"
+                                                    >Message</label
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-end mt-3">
+                                        <button
+                                            class="btn btn-link text-warning p-0"
+                                            type="submit"
+                                        >
+                                            <span
+                                                class="fw-bolder text-uppercase"
+                                                >Submit</span
+                                            >
+                                            <img
+                                                class="ms-3"
+                                                src="assets/img/icons/long-arrow.png"
+                                                alt=""
+                                            />
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of .container-->
+            </section>
+            <!-- <section> close ============================-->
+            <!-- ============================================-->
+        </main>
+        <!-- ===============================================-->
+        <!--    End of Main Content-->
+        <!-- ===============================================-->
+
+        <footer class="bg-footer-black" id="footer">
+            <div class="container py-7 px-md-5">
+                <div class="row g-0">
+                    <div class="col-md-6 mb-5 mb-md-0">
+                        <div class="mb-4 d-inline-block">
+                            <a
+                                class="navbar-brand pt-0 fs-3 text-white d-flex align-items-center"
+                                href="index.html"
+                            >
+                                <img
+                                    class="img-fluid"
+                                    src="assets/img/icons/dark-logo-icon.png"
+                                    alt=""
+                                    width="25"
+                                    height="25"
+                                />
+                                <span class="fw-bolder ms-2"
+                                    >BusinessCoaching</span
+                                >
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-10 text-300 mb-3">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <a class="nav-link text-300 d-inline"
+                                >4 Morris Ave, George Central, George, 6529,
+                                South Africa</a
+                            >
+                        </div>
+                        <div class="col-12 col-md-10 text-300 mb-3">
+                            <i class="fas fa-user"></i>
+                            <a
+                                class="nav-link text-300 d-inline"
+                                href="tel:+27832269017"
+                            >
+                                +27832269017
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-10 text-300 mb-3">
+                            <i class="fas fa-envelope"></i>
+                            <a
+                                class="nav-link text-300 d-inline"
+                                href="mailto:scrscrumbledegg@gmail.com"
+                                >visionary_guide@gmail.com</a
+                            >
+                        </div>
+                        <div class="row">
+                            <h4 class="text-white">Website Navigation</h4>
+                            <div
+                                class="col-md-6"
+                                style="display: flex; flex-direction: column"
+                            >
+                                <a
+                                    class="social-icons"
+                                    href="index.html"
+                                    target="_blank"
+                                    >Home</a
+                                >
+                                <a
+                                    class="social-icons"
+                                    href="contact.html"
+                                    target="_blank"
+                                    >Contact</a
+                                >
+                                <a
+                                    class="social-icons"
+                                    href="about.html"
+                                    target="_blank"
+                                    >About</a
+                                >
+                            </div>
+                            <div
+                                class="col-md-6"
+                                style="display: flex; flex-direction: column"
+                            >
+                                <a
+                                    class="social-icons"
+                                    href="privacy-policy.html"
+                                    target="_blank"
+                                    >Privacy Policy</a
+                                >
+                                <a
+                                    class="social-icons"
+                                    href="terms-of-use.html"
+                                    target="_blank"
+                                    >Terms of Use</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="text-white mb-2">
+                            SUBSCRIBE TO OUR NEWSLETTER
+                        </h5>
+                        <form action="thanks.html" method="get">
+                            <div
+                                class="form-floating mb-5 position-relative text-200"
+                            >
+                                <input
+                                    class="form-control form-fotogency-header-control text-200"
+                                    id="email"
+                                    type="email"
+                                    placeholder="name@example.com"
+                                    required="required"
+                                />
+                                <label class="text-300 mb-1" for="email"
+                                    >Email</label
+                                >
+                                <div class="position-absolute end-0 top-0">
+                                    <button
+                                        class="btn shadow-none px-0"
+                                        type="submit"
+                                    >
+                                        <img
+                                            class="ms-3"
+                                            src="assets/img/icons/long-arrow.png"
+                                            alt=""
+                                        />
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <div
+                            class="d-flex gap-2 flex-wrap justify-content-between align-items-center"
+                        >
+                            <a
+                                class="social-icons"
+                                href="https://www.facebook.com/"
+                                target="_blank"
+                                >Facebook</a
+                            >
+                            <a
+                                class="social-icons"
+                                href="https://twitter.com/"
+                                target="_blank"
+                                >Twitter</a
+                            >
+                            <a
+                                class="social-icons"
+                                href="https://www.instagram.com/"
+                                target="_blank"
+                                >Instagram</a
+                            >
+                            <a
+                                class="social-icons"
+                                href="https://www.youtube.com/"
+                                target="_blank"
+                                >YouTube</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Cookie banner -->
+        <div class="cookie-wrapper show">
+            <div>
+                <i class="bx bx-cookie"></i>
+                <h2 style="text-align: center">Cookie Policy</h2>
+            </div>
+
+            <div class="data">
+                <p>
+                    This website uses cookies to ensure optimal user experience.
+                    Cookies are small text files that are stored on your device
+                    and help with site functionality as well as collect
+                    anonymous statistics about its usage. By using our website,
+                    you consent to the use of cookies in accordance with our
+                    cookie policy.
+                </p>
+            </div>
+
+            <div class="buttons">
+                <button class="cookie-button" id="acceptBtn">Accept</button>
+                <button class="cookie-button" id="declineBtn">Decline</button>
+            </div>
+        </div>
+        <!-- End Cookie banner -->
+
+        <!-- ===============================================-->
+        <!--    JavaScripts-->
+        <!-- ===============================================-->
+        <script src="vendors/popper/popper.min.js"></script>
+        <script src="vendors/bootstrap/bootstrap.min.js"></script>
+        <script src="vendors/anchorjs/anchor.min.js"></script>
+        <script src="vendors/is/is.min.js"></script>
+        <script src="vendors/fontawesome/all.min.js"></script>
+        <script src="vendors/lodash/lodash.min.js"></script>
+        <script src="vendors/prism/prism.js"></script>
+        <script src="vendors/swiper/swiper-bundle.min.js"></script>
+        <script src="assets/js/theme.js"></script>
+        <script src="assets/js/cookiebanner.js"></script>
+    </body>
+</html>

@@ -1,0 +1,88 @@
+/* prettier-ignore */
+/*# sourceMappingURL=user.css.map */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+.cookie-wrapper {
+    position: fixed;
+    bottom: 0px;
+    right: 0;
+    width: 100%;
+    background: #fff;
+    padding: 15px 25px 22px;
+    transition: right 0.3s ease;
+    box-shadow: 0 5px 10px rgb(0, 0, 0);
+    z-index: 999;
+    @media (max-width: 600px) {
+        width: 100%;
+    }
+}
+.cookie-wrapper .show {
+    right: 20px;
+}
+
+.hidden {
+    display: none;
+}
+header i {
+    color: #97BC62FF;
+    font-size: 32px;
+    text-align: center;
+}
+header h2 {
+    color: #97BC62FF;
+    font-weight: 500;
+    text-align: center;
+}
+.data {
+    text-align: center;
+}
+.data p a {
+    color: #97BC62FF;
+    text-decoration: none;
+    text-align: center !important;
+}
+.data p a:hover {
+    text-decoration: underline;
+}
+.buttons {
+    padding: 20px 0px;
+    text-align: center;
+}
+.buttons .cookie-button {
+    border: 2px solid #97BC62FF;
+    color: #fff;
+    padding: 8px 0;
+    background: #97BC62FF;
+    cursor: pointer;
+    width: calc(100% / 2 - 10px);
+    transition: all 0.2s ease;
+    max-width: 150px;
+    border-radius: 0px;
+}
+.buttons #acceptBtn:hover {
+    background-color: transparent;
+    color: #97BC62FF;
+}
+#declineBtn {
+    background-color: #fff;
+    color: #97BC62FF;
+    border-radius: 0;
+}
+#declineBtn:hover {
+    background-color: #97BC62FF;
+    color: #fff;
+}
+select {
+    height: 48px;
+    padding-top: 10px !important;
+ }
+ 
+ .iti {
+     width: 100% !important;
+     margin-bottom: 10px;
+     margin-top: 0px !important;
+ }
+ 
+ .iti input {
+     height: 58px;
+ }      
